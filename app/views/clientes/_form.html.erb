@@ -3,7 +3,7 @@
 
   <% if @cliente.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+      <h2><%= pluralize(@cliente.errors.count, "erro") %> não foi possivel salvar faltando os campos abaixo:</h2>
 
       <ul>
       <% @cliente.errors.full_messages.each do |message| %>
@@ -30,6 +30,10 @@
     <%= f.text_field :endereco %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Enviar' %>
+  </div>
+
+<div class="actions" >
+  <%= f.button link_to 'Voltar', clientes_path  %>
   </div>
 <% end %>
