@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.1.2"
 gem "font-awesome-rails"
 
 gem 'simple_form'
@@ -50,5 +50,4 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-ruby "2.1.2p95"
 
