@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+
 gem "font-awesome-rails"
 
 gem 'simple_form'
@@ -11,6 +13,7 @@ gem 'sass'
 #Heoku
 gem 'rails_12factor', group: :production
 gem 'pg', '~> 0.18.4', group: :production
+gem 'unicorn', group: :production
  
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
